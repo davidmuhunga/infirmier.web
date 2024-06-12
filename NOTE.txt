@@ -1,0 +1,26 @@
+NOTE
+
+0. changer les coordonnées de connexion dans le fichier Settings.py 
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'nom_moteur_bdd',
+        'NAME': 'nom_bdd',
+        'USER':'nom_utilisateur',
+        'PASSWORD': 'Pwd_utilisateur',
+        'HOST': 'domaine_name',
+        'PORT': 'Port_utilisé'
+    }
+}
+
+1. Migrer la base des données (Pour générer la base des données dans Postgres)
+2. créer un super User
+3. Pour affichage Liste (GET) : http://127.0.0.1:8000/api/nom_url/
+4. Pour Enregistrement, envoyer les données sur (POST) : http://127.0.0.1:8000/api/nom_url/
+5. Pour affichage détail (GET) : http://127.0.0.1:8000/api/nom_url/id/
+6. Pour Mise à jour, envoyer les données sur (PUT) : http://127.0.0.1:8000/api/nom_url/id/
+7. Pour supprimer (DELETE) : http://127.0.0.1:8000/api/nom_url/id/
+8. Charger une photo (POST) et envoyer au lien : http://127.0.0.1:8000/api/upload/
+
+NB: voir nom_url dans le fichier Urls.py
+
